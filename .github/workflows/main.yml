@@ -47,5 +47,6 @@ jobs:
         with:
          manifests: |
            ./k8s/deployment.yaml
-         images: 'vandeilsonln/review-filmes:v${{ github.run_number }}'
+         images: |
+           vandeilsonln/review-filmes:v${{ github.run_number }}
     
