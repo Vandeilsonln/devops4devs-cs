@@ -40,7 +40,7 @@ jobs:
           aws-region: us-east-1
 
       - name: Configure Kubeconfig
-        run: aws eks update kubeconfig --name aula-eks
+        run: aws eks update-kubeconfig --name aula-eks
 
       - name: Deploy to k8s
         uses: Azure/k8s-deploy@v5.0.0
